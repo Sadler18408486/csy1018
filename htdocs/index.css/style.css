@@ -1,0 +1,148 @@
+body {
+  display: flex;
+  flex-direction: column;
+  font-family:  'Old Standard TT', serif; /*font for content*/
+  height: 100%;
+  width: 100%;
+  line-height: 100%;
+  margin: 0;
+  
+}
+
+h1 {
+  font-family: "Times New Roman", sans-serif; /*differnt font for header*/
+  color: black;
+  height: 5%;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin: 0px;
+  background-color: #607D8B;
+  display: flex;
+    justify-content: center; 
+    align-self: center /*aligning header on the page*/
+}
+
+.nav {
+  height: 2%;
+  width: 100%;
+  padding-bottom: 30px;
+  display: flex;
+    justify-items: center;
+    align-items: stretch; /*aligning nav bar on the page*/
+}
+
+nav {
+  font-size: 1em;
+  width: 100% 
+}
+
+ul {
+  list-style-type: none;
+  width: 100%;
+  font-size: 1vw;
+  display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+li {
+  width: 20%;
+}
+
+.main {
+  color: rgb(23, 23, 23); /*font colour*/
+  min-height: 60%;
+  width: 100%;      
+}
+
+.footer {
+  background-color: rgba(204, 204, 204, 0.664); /*secondary colour for footer*/
+  width: 100%;
+  height: fit-content;
+  padding: 16px 0px 16px 0px;
+}
+
+.button {
+  text-align: center;
+  color: #757575;
+  border: 4px;
+  padding: 10px 20px;
+  background-color: rgba(151, 209, 235, 0);
+  -webkit-transition-duration: 0.4s; /*button colour fades in and out*/
+  transition-duration: 0.4s;
+  border-radius: 12px /*rounded corners on buttons*/
+}
+
+.button:hover, .button:disabled {
+  background-color: #FF5252;
+  color: black; 
+} /*nav buttons change colour when you hover and button for current page is disabled*/
+
+a {
+  padding: 8px;
+  color: black;
+}
+
+article {
+  padding: 16px 0px 16px 0px;
+  column-gap: 2em;	
+  column-rule: 1px dotted #BDBDBD;
+  min-height: 60%;
+  width: 100%;
+}
+
+section {
+  padding: 16px;
+  column-gap: 1.5em;
+  column-rule:  1px dotted #BDBDBD;
+}
+
+h2{
+  text-align: center;
+  line-height: 2em;
+}
+
+p {
+  line-height: 2em;
+  text-align: justify;
+  text-justify: inter-word;
+  border-radius: 12px;
+  color: #212121
+}
+
+cite {
+  text-align: start;
+  font-size: 1vw;
+}
+
+code {
+  background-color: rgb(204, 204, 204);
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 2px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  padding: 12%;
+}
+
+/*desktop size*/
+@media screen and (max-width: 2560px) {
+  .column {
+    flex: 25%;
+    max-width: 50%;
+}
+
+/*mobile size*/
+@media screen and (max-width: 425px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+}
